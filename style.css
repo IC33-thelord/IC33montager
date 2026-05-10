@@ -1,0 +1,180 @@
+:root {
+  --bg: #0b1022;
+  --bg-soft: #121935;
+  --text: #eef2ff;
+  --muted: #b6c1f2;
+  --accent: #5eead4;
+  --accent-2: #60a5fa;
+  --card: #171f42;
+  --border: rgba(255, 255, 255, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #1f2a57, var(--bg));
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 82px 0 72px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(94, 234, 212, 0.1);
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.12;
+  max-width: 800px;
+}
+
+.lead {
+  max-width: 670px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #001018;
+  background: linear-gradient(135deg, var(--accent), #7cf7e3);
+  box-shadow: 0 8px 24px rgba(94, 234, 212, 0.35);
+}
+
+.btn-secondary {
+  color: var(--text);
+  background: linear-gradient(135deg, #3658b6, var(--accent-2));
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.35);
+}
+
+.section {
+  padding: 40px 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: clamp(28px, 3.5vw, 40px);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card), var(--bg-soft));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.section-contacts {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.contacts-intro {
+  color: var(--muted);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.contact-list span {
+  color: var(--muted);
+  margin-right: 8px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 22px 0 30px;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 62px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

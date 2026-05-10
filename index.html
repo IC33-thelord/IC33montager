@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои услуги</title>
+  <meta name="description" content="Предлагаю качественные онлайн-услуги с быстрым выполнением и удобной связью.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="tag">Принимаю заказы</span>
+      <h1>Профессиональные услуги онлайн</h1>
+      <p class="lead">Быстро выполняю задачи, всегда на связи и довожу работу до результата.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+380638559000">Позвонить</a>
+        <a class="btn btn-secondary" href="https://t.me/L2001freed0m" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Что я предлагаю</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Удаленные задачи</h3>
+            <p>Беру в работу онлайн-задачи любого уровня сложности и соблюдаю сроки.</p>
+          </article>
+          <article class="card">
+            <h3>Качественное выполнение</h3>
+            <p>Внимание к деталям, аккуратность и фокус на нужном вам результате.</p>
+          </article>
+          <article class="card">
+            <h3>Постоянная связь</h3>
+            <p>Оперативно отвечаю и держу вас в курсе на каждом этапе работы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <p class="contacts-intro">Свяжитесь со мной любым удобным способом:</p>
+        <ul class="contact-list">
+          <li><span>Телефон:</span> <a href="tel:+380638559000">+380 (63) 855-90-00</a></li>
+          <li><span>Email:</span> <a href="mailto:ami1ceetee@gmail.com">ami1ceetee@gmail.com</a></li>
+          <li><span>Telegram:</span> <a href="https://t.me/L2001freed0m" target="_blank" rel="noopener noreferrer">@L2001freed0m</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Мои услуги</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
